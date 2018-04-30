@@ -15,6 +15,7 @@ namespace NeuralNetworks
             // the weight of the bias neuron is always 1
             Neuron _biasNeuron = new Neuron();
             _biasNeuron.weight = 1;
+            _biasNeuron.input = 1;
 
             Neuron _neuron1 = new Neuron();
             Neuron _neuron2 = new Neuron();

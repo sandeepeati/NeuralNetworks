@@ -23,5 +23,16 @@ namespace NeuralNetworks
                 }
             }
         }
+
+        // each layer has error 
+        // in order to eliminate error we calculate cost function
+        // and an average is taken at layer level
+        public double CostFunction
+        {
+            get
+            {
+                return (1 / (1 + Math.Exp(-Output))) / Neurons.Count;
+            }
+        }
     }
 }
